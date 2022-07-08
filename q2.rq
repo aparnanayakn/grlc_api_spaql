@@ -1,0 +1,8 @@
+#+ summary: Lists all DBpedia entities of a type
+#+ endpoint: http://dbpedia.org/sparql
+#+ method: GET
+#+ defaults:
+#+   - type: http://dbpedia.org/ontology/Band
+
+select distinct ?s where {?s a ?_type_iri}
+
